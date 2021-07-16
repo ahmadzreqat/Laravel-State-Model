@@ -4,6 +4,8 @@
 namespace statemm;
 
 
+use Illuminate\Database\Eloquent\Model;
+
 abstract class State
 {
     protected $state;
@@ -35,6 +37,12 @@ abstract class State
     public function getContext(): Context
     {
         return $this->context;
+    }
+
+
+    public function getModel(): Model
+    {
+        return $this->getContext()->getModel();
     }
 
     private function addStateToLog()
