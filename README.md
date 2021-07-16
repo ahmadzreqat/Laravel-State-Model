@@ -30,16 +30,19 @@ go to your config/app.php file and add :
  statemm\StateServiceProvider::class ,
 ```
 #### adding interface to model 
+
 ```bash 
 class Product extends Model implements hasState
 ```
 ```bash
 
+#### use command line to create a new state for your model
 ```bash 
 $ php artisan state:make activated --dir=productStateContainer
 ```
 
 ```bash
+
 add method stubs in your model:
  public function initialState()
     {
