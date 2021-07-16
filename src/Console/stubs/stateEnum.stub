@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models\{{directory}};
+
+
+class StateEnum
+{
+
+  {{const}}
+
+
+    public static function getStates():array
+    {
+        return [
+           {{in_array}}
+        ];
+    }
+}

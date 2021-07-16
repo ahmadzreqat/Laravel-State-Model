@@ -1,0 +1,29 @@
+{
+    "name": "asz/statemm",
+    "description": "manage model state",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "statemm\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ahmadzreqat",
+            "email": "ahmedzreqat1@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/framework": "^8.40"
+    } ,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "statemm\\StateServiceProvider"
+            ]
+        }
+    }
+}

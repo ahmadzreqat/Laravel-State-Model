@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models\{{directory}};
+
+
+class {{STATE}}State extends \StateMS\src\State
+{
+    protected $state = StateEnum::{{ENUM}}_STATE;
+
+    public function proceed()
+    {
+        // TODO: Implement proceed() method.
+        // handle proceed before transition To another state
+        // use transitionTo method to move to new State .
+        $this->transitionTo();
+    }
+}
