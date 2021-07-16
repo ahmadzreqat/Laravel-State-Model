@@ -61,8 +61,18 @@ add method stubs in your model:
     public function testCanDeactivateProduct()
     {
 
-       $product = new product();
-       $context = new Context($product->where(['id' => 4])->first());
+        $product = new product();
+       
+       // the product is active and the initial state will check to 
+       // $this->transitionTo( new DeactivatedState()); 
+       
+        $context = new Context($product->where(['id' => 4])->first()); 
+       
+       // if true the proceed function will go to next state 
+       // which is deactivatedState and execute the query or what 
+       // you want todo
+       // the deactivated has query to deactivate the given product
+       
        $context->proceed();
        self::assertEquals(StateEnum::DEACTIVATED_STATE, $context->getModel()->state);
     }
