@@ -54,3 +54,17 @@ add method stubs in your model:
         return new ActivatedState();
     }
 ```
+
+
+## Test Unit
+```bash
+    public function testCanDeactivateProduct()
+    {
+
+       $product = new product();
+       $context = new Context($product->where(['id' => 4])->first());
+       $context->proceed();
+       self::assertEquals(StateEnum::DEACTIVATED_STATE, $context->getModel()->state);
+    }
+    
+    ```
