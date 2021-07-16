@@ -37,7 +37,7 @@ class Product extends Model implements hasState
 
 ```bash 
 $ php artisan state:make activated --dir=productStateContainer
-```
+```bash
 ```bash
 add method stubs in your model:
  public function initialState()
