@@ -34,9 +34,11 @@ go to your config/app.php file and add :
 ```bash 
 class Product extends Model implements hasState
 ```
-```bash
+
 
 #### use command line to create a new state for your model
+
+
 ```bash 
 $ php artisan state:make activated --dir=productStateContainer
 ```
