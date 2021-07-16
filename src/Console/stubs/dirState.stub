@@ -3,7 +3,7 @@
 namespace App\Models\{{directory}};
 
 
-class {{STATE}}State extends \StateMS\src\State
+class {{STATE}}State extends \statemm\State
 {
     protected $state = StateEnum::{{ENUM}}_STATE;
 
