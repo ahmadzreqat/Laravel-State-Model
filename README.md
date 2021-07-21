@@ -1,4 +1,4 @@
-# StateMM
+# Laravel Model State
 <div class="row" align="center">
 <img src="https://img.shields.io/github/issues/ahmadzreqat/stateMM" >
 <img src="https://img.shields.io/github/stars/ahmadzreqat/stateMM" >
